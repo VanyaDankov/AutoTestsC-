@@ -11,7 +11,7 @@ namespace WebDriverProekt
         By passwordLocator = By.XPath("//input[@id='passp-field-passwd']");
         By switchAccountLocator = By.XPath("//a[@class='CurrentAccount']");
         By addAccountButtonLocator = By.XPath("//span[@class='AddAccountButton-text']");
-        By testLoginLocator = By.XPath("//div[@class='home-logo__default']");
+        By testLoginLocator = By.XPath("//div[@class='search3__input-wrapper']");
 
         private WebDriver driver;
         public LoginPage(WebDriver driver)

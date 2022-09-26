@@ -6,7 +6,7 @@ namespace WebDriverProekt
 {
     public class StartPage
     {
-        private By mailLocator = By.XPath("//a[@data-statlog='notifications.mail.login.inbox.unread']");
+        private By mailLocator = By.XPath("//a[@data-statlog='headline.mail']");
         private WebDriver driver;
         public StartPage(WebDriver driver)
         {
