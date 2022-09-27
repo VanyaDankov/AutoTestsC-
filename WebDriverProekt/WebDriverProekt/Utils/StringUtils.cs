@@ -25,5 +25,11 @@ namespace WebDriverProekt.Utils
             }
             return str;
         }
+        public static string DataToFile()
+        {
+            string data = DateTime.Now.ToString("u");
+            var result = new String(data.Where(Char.IsDigit).ToArray());
+            return result;
+        }
     }
 }

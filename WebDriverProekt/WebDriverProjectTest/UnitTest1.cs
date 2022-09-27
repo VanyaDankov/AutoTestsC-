@@ -3,6 +3,8 @@ using WebDriverProekt;
 using OpenQA.Selenium;
 using WebDriverProekt.steps;
 using WebDriverProekt.Utils;
+using WebDriverProekt.driverSingleTon;
+using NUnit.Framework.Interfaces;
 
 namespace WebDriverProjectTest
 {
@@ -18,10 +20,10 @@ namespace WebDriverProjectTest
         [TearDown]
         public void Cleanup()
         {
-           /* if ((TestContext.CurrentContext.Result.Outcome == ResultState.Failure) || (TestContext.CurrentContext.Result.Outcome == ResultState.Error))
+            if ((TestContext.CurrentContext.Result.Outcome == ResultState.Failure) || (TestContext.CurrentContext.Result.Outcome == ResultState.Error))
             {
                 DriverSingleTon.createScreenshot();
-            }*/
+            }
             steps.CloseBrowser();
         }
 
