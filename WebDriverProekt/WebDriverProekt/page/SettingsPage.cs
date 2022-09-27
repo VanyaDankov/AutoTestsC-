@@ -10,6 +10,7 @@ namespace WebDriverProekt
         private By firstNameLocator = By.XPath("//div[@data-testid='personal-data-first-name']/span/input[@data-testid='text-field-input']");
         private By saveLocator = By.XPath("//button[@data-testid='personal-data-submit']");
         private By getFirstNameLocator = By.XPath("//div[@data-testid='personal-data-first-name']/span/input[@class='Textinput-Control']");
+        private By checkInfoLocator = By.XPath("//div[@data-testid='profile-user-info']");
         private WebDriver driver;
         public SettingsPage(WebDriver driver)
         {
@@ -27,8 +28,9 @@ namespace WebDriverProekt
         }
         public string getFirstName()
         {
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(3000);
             driver.Navigate().Refresh();
+            driver.FindElement(checkInfoLocator).Click();
             return driver.FindElement(getFirstNameLocator).GetAttribute("value");
         }
     }

@@ -19,7 +19,7 @@ namespace WebDriverProekt
         private By messengeLocator = By.XPath("//div[contains(@class, 'ns-view-messages-item-wrap')]//div[contains(@class, 'ns-view-messages-item-wrap')][1]");
         private By MessegeByUserEmeilLocator(string address)
         {
-            By messegeByUserEmeilLocator = By.XPath("//span[@title='"+address+"']");
+            By messegeByUserEmeilLocator = By.XPath("//span[@title='" + address + "']");//span[@title='yanusya.tori']
             return messegeByUserEmeilLocator;
         }
 
