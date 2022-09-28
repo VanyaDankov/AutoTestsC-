@@ -28,7 +28,7 @@ namespace WebDriverProekt.steps
         public bool loginYandex()
         {
             LoginPage loginPage = new LoginPage();
-            loginPage.login(UserCreator.withEmptyUserPassword());
+            loginPage.login(UserCreator.getFullUser());
 
             return loginPage.TestLogin();
         }
