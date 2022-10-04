@@ -16,7 +16,7 @@ namespace WebDriverProekt
         private By relevantLocator = By.XPath("//a[@href='#tabs/relevant'");
         private By asdb = By.XPath("//div[contains(@class, 'ns - view - messages - item - box')]");
         private By asdbz = By.XPath("//div[contains(@class, 'js - messages - item - checkbox - controller')][1]");
-        private By messengeLocator = By.XPath("//div[contains(@class, 'ns-view-messages-item-wrap')]//div[contains(@class, 'ns-view-messages-item-wrap')][1]");
+        private By messengeLocator = By.XPath("//div[contains(@class, 'ns-view-messages-item-wrap')]//div[contains(@class, 'ns-view-messages-item-wrap')][1]//span");
         private By MessegeByUserEmeilLocator(string address)
         {
             By messegeByUserEmeilLocator = By.XPath("//span[@title='" + address + "']");//span[@title='yanusya.tori']
